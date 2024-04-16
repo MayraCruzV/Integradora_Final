@@ -12,7 +12,7 @@ class DevelopmentConfig(Config):
     MAIL_PORT=587
     MAIL_USE_TLS = True
     MAIL_USERNAME='20213tn161@utez.edu.mx'
-    MAIL_PASSWORD='20213tn161ya0'
+    MAIL_PASSWORD=''
     
 config = {
     'development': DevelopmentConfig,
