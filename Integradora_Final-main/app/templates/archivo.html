@@ -1,0 +1,63 @@
+{% extends './body.html'%}
+
+{% block title%} Libros disponibles {% endblock %}
+
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block container %}
+
+<div class="card madre mb-3 p-2 shadow-sm mt-4" style="width: 95%; overflow-y: auto; margin: 0 auto;">
+    <div class="card-header text-center">
+        <h3>Sube tus propias creaciones</h3>
+    </div>
+    <div class="card-body">
+        
+        <div class="row">
+           
+            <div class="col-sm-12">
+                <div class="card mb-3 mx-auto mt-4" style="max-width: 80%; padding: 20px;">
+                    <p>¿Quieres que tu libro se destaque en nuestra plataforma? Ahora puedes subir la carátula de tu 
+                        libro en formato JPG para que los lectores puedan identificar y recordar fácilmente tus obras. 
+                        ¡Haz que tu libro brille!</p>
+                    
+                    <h4>¿Por qué subir la carátula de tu libro?</h4>
+                    <ul>
+                        <li><strong>Llamar la atención de los lectores:</strong> Una carátula atractiva puede captar la atención de los lectores potenciales, haciéndolos más propensos a explorar tu libro y considerar su compra.</li>
+                        <li><strong>Representación visual:</strong> La carátula es la primera impresión que los lectores tendrán de tu libro. Ayuda a transmitir el tema y el tono de tu obra, generando interés y curiosidad.</li>
+                        <li><strong>Facilitar la identificación:</strong> Con la carátula, los lectores pueden identificar fácilmente tu libro en su biblioteca virtual, en su lista de deseos o entre otras ofertas.</li>
+                        <li><strong>Aumentar la credibilidad:</strong> Un libro con una carátula profesional o llamativa puede mejorar la percepción de calidad del contenido, aumentando la confianza del lector en tu obra.</li>
+                    </ul>
+                    
+                    <h4>¿Cómo funciona?</h4>
+                    <ol>
+                        <li><strong>Formato compatible:</strong> Asegúrate de que la imagen de la carátula esté en formato JPG y siga las dimensiones recomendadas para una visualización óptima.</li>
+                        <li><strong>Proceso de subida sencillo:</strong> Simplemente haz clic en el botón "Subir carátula", selecciona la imagen desde tu dispositivo, y confirma para completar el proceso.</li>
+                    </ol>
+                    
+                    <p><strong>¡Sube la carátula de tu libro ahora!</strong> Destaca tu obra en nuestra plataforma y atrae a más lectores con una carátula llamativa y memorable. ¡Estamos ansiosos por ver tu creatividad y apoyar tu éxito como autor!</p>
+                    <h3>MANERA SEGURA</h3>
+                    <form method="post" action="/subirseguro" enctype="multipart/form-data">
+                        <label for="file-upload">Selecciona una foto para enviar:</label>
+                        <input type="file" id="file-upload" name="file"  required>
+                        <br>
+                        <button type="submit" class="btn btn-success" name="Upload">Subir carátula</button>
+                    </form>
+                    
+                    <h3>MANERA INSEGURA</h3>
+                    <form method="post" action="/subir" enctype="multipart/form-data">
+                        <label for="file-upload">Selecciona una foto para enviar:</label>
+                        <input type="file" id="file-upload" name="file" required>
+                        <br>
+                        <button type="submit" class="btn btn-success" name="Upload">Subir carátula</button>
+                    </form>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}
