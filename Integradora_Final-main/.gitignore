@@ -1,9 +1,0 @@
-__pycache__/
-*.py[cod]
-*$py.class
-
-#Byte-compiled /Optimized / DLL(Dynamic Link Library)
-
-#Enviroments
-env/
-.env
