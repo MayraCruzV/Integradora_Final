@@ -13,9 +13,7 @@
             <div class="card">
                 <div class="card-body">
                     <form class="form-signin" action="/login" method="POST">
-                       
-                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-                        
+                                            
                         <div class="text-center mb-4">
                             <img src="{{ url_for('static', filename='img/logo.png') }}" alt="" width="100" height="57" class="logo-spacing">
                             <h1 class="h3 mb-3 fw-normal">Inicio de Sesión</h1>
