@@ -4,10 +4,10 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG=True
-    MYSQL_HOST='prueba.crwxcbze5ub7.us-east-1.rds.amazonaws.com'
-    MYSQL_USER='user-swal'
-    MYSQL_PASSWORD='swaluser$'
-    MYSQL_DB='SWAL'
+    MYSQL_HOST='swal-bd.chkqx83nwpiu.us-east-1.rds.amazonaws.com'
+    MYSQL_USER='admin'
+    MYSQL_PASSWORD='Ccna*#2023'
+    MYSQL_DB='swal_bd'
     MAIL_SERVER='smtp.googlemail.com'
     MAIL_PORT=587
     MAIL_USE_TLS = True
