@@ -4,9 +4,9 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG=True
-    MYSQL_HOST='localhost'
-    MYSQL_USER='root'
-    MYSQL_PASSWORD='FS/5o3f71KbIPv@]'
+    MYSQL_HOST='swal-bd.chkqx83nwpiu.us-east-1.rds.amazonaws.com'
+    MYSQL_USER='admin'
+    MYSQL_PASSWORD='Ccna*#2023'
     MYSQL_DB='bd_img'
     MAIL_SERVER='smtp.googlemail.com'
     MAIL_PORT=587
