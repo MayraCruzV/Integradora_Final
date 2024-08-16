@@ -19,3 +19,4 @@ config = {
     'default': DevelopmentConfig
 }
 #FS/5o3f71KbIPv@]
+swal-bd.chkqx83nwpiu.us-east-1.rds.amazonaws.com

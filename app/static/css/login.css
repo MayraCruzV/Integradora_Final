@@ -20,7 +20,7 @@ body {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-image: url('/static/img/fondo_login.jpg');
+  background-image: url('/static/img/fondo_register.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
